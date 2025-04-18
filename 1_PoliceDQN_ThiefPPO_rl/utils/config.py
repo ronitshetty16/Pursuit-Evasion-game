@@ -1,0 +1,25 @@
+# Environment
+GRID_WIDTH = 15  # x-axis (columns)
+GRID_HEIGHT = 15  # y-axis (rows)
+GRID_SIZE = (GRID_WIDTH, GRID_HEIGHT)  # (x,y)
+CELL_SIZE = 40
+EPISODE_DURATION = 10  # seconds
+FPS = 120
+TIME_SPEED_MULTIPLIER = 2  # faster than real time
+
+# Colors
+BACKGROUND_COLOR = (240, 240, 240)
+POLICE_COLOR = (0, 0, 255)  # Blue
+THIEF_COLOR = (255, 0, 0)    # Red
+POLICE_STATION_COLOR = (100, 100, 255)
+BANK_COLOR = (255, 215, 0)  # Gold
+OBSTACLE_COLOR = (70, 70, 70)  # Dark gray
+ROAD_COLOR = (150, 150, 150)  # Gray
+
+# Rewards
+POLICE_CATCH_REWARD = 20
+THIEF_ESCAPE_REWARD = 0.05  # per second
+THIEF_CAUGHT_PENALTY = -20
+POLICE_TIME_PENALTY = -0.05  # per second
+THIEF_SURVIVAL_REWARD = 5
+POLICE_FAIL_PENALTY = -5
